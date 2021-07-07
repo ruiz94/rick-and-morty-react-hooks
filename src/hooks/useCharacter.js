@@ -7,10 +7,15 @@ const useCharacters = url => {
 
   useEffect( () => {
     const getData = async () => {
-      const response = await axios(url);
+      const response = await axios(url, {
+        'mode': 'cors',
+        'headers': {
+            'Access-Control-Allow-Origin': '*',
+        }
+    });
       setNextPage(response.data.info.next);
       const newCharacters = [...characters, ...response.data.results];
-      console.log(newCharacters);
+      // console.log(newCharacters);
       setCharacters(newCharacters);
     }
     getData();

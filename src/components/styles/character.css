@@ -1,0 +1,78 @@
+.title-container{
+  font-size: 2rem;
+  color: #666666;
+}
+
+.characters-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.character{
+  /* background-color: #f0b20f; */
+  background-color: #045662;
+  /* background-color: #326569; */
+  box-shadow: 0 0 5 10 #e68534;
+  margin: 5px;
+  border-radius: 10px;
+  color: #f5b700;
+  width: 250px;
+  border: .5px solid #f5b700;
+}
+
+.character button{
+  background-color: #03af9d;
+  border: none;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.character .character_img{
+  width: 250px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.character-favoritos{
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+.character-favoritos .fav img{
+  width: 100px;
+  border-radius: 100%;
+  border: 2px solid #f0b20f;
+  padding: 5px;
+  margin: 0 10px;
+}
+
+.no-characters{
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0,0.2);
+  transition: all .5s;
+  
+}
+.darkMode .no-characters{
+  color: rgba(255, 255, 255,0.2)
+}
+
+/* button add more */
+.btn-add-more{
+  margin: 10px auto;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: #57cc99;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}

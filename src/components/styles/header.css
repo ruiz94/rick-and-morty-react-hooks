@@ -1,0 +1,25 @@
+.header{
+  display: flex;
+  justify-content: space-evenly;
+  color: #666666;
+  padding-top: 20px;
+}
+.header h1{
+  margin: 0;
+}
+.header button{
+  width: 200px;
+  padding: 10px 15px;
+  border: none;
+  transition: all .5s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.header button.lightMode{
+  background-color: #666666;
+  color: antiquewhite;
+}
+.header button.darkMode{
+  background-color: antiquewhite;
+  color: #666666;
+}

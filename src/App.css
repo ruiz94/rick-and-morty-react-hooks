@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  transition: background-color .3s;
+  min-height: 100vh;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
 }
 
 .App-logo {
@@ -35,4 +39,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Dark mode and Light mode */
+.App.darkMode{
+  background-color: #282c34;
+}
+.App.lightMode{
+  background-color: antiquewhite;
+}
+
+/* search  */
+.search input{
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+  color: #282c34;
+}
+.search input:focus{
+  outline: none;
 }
